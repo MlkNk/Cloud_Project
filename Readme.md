@@ -1,4 +1,4 @@
-# 🌍 Global Health – Analyse, Transformation et Prédiction de Données de Santé Mondiale
+# Global Health – Analyse, Transformation et Prédiction de Données de Santé Mondiale
 
 
 **Outils** : Microsoft Fabric, Power BI, Kaggle (Global Health Statistics)
@@ -36,18 +36,18 @@ Les fichiers initiaux sont fournis au format CSV, avec plusieurs années et pays
 
 Notre pipeline est structuré autour du modèle **Bronze → Silver → Gold** avec 3 notebooks principaux, chacun jouant un rôle spécifique dans le traitement des données :
 
-✨ **Bronze** – Ingestion initiale  
+ **Bronze** – Ingestion initiale  
 - Chargement brut des fichiers CSV
 - Inspection de la qualité et exploration initiale (pandas-profiling)
 - Nettoyage de base : gestion des valeurs manquantes, renommage des colonnes
 
-✨ **Silver** – Structuration des données  
+ **Silver** – Structuration des données  
 - Nettoyage avancé, filtrage des pays/années incohérents
 - Transformation des types de données
 - Enrichissement de certaines colonnes (catégorisation, regroupement)
 - Préparation des dimensions et faits pour un modèle en étoile
 
-✨ **Gold** – Modèle final + Machine Learning  
+ **Gold** – Modèle final + Machine Learning  
 - Construction de tables `dim_country`, `dim_year`, `dim_disease`, `fact_health`
 - Séparation logique des dimensions et faits
 - Intégration dans Power BI pour modélisation sémantique
